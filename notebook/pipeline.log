@@ -1,0 +1,21 @@
+2026-02-04 18:20:21,299 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-04 18:20:21,301 | FintechPipeline | ERROR | Data directory not found!
+2026-02-04 18:20:41,248 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-04 18:20:41,250 | FintechPipeline | INFO | Data directory verified.
+2026-02-04 18:20:53,917 | Profiler | ERROR | Input file not found: data\customers_raw.csv
+2026-02-04 18:20:53,918 | Profiler | ERROR | Analysis failed: File not found: data\customers_raw.csv
+2026-02-04 18:21:42,181 | Profiler | ERROR | Input file not found: ..\..\data\customers_raw.csv
+2026-02-04 18:21:42,183 | Profiler | ERROR | Analysis failed: File not found: ..\..\data\customers_raw.csv
+2026-02-04 18:22:01,228 | Profiler | ERROR | Input file not found: ..\..\..\data\customers_raw.csv
+2026-02-04 18:22:01,229 | Profiler | ERROR | Analysis failed: File not found: ..\..\..\data\customers_raw.csv
+2026-02-04 18:24:01,416 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-04 18:24:01,418 | FintechPipeline | INFO | Data directory verified.
+2026-02-04 18:24:22,550 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-04 18:24:22,574 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-04 18:24:22,584 | Profiler | INFO | Analysis complete. Report saved to: report/data_quality_report.txt
+2026-02-04 18:25:00,755 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-04 18:25:00,773 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-04 18:25:00,779 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-04 18:26:12,744 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-04 18:26:12,761 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-04 18:26:12,771 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt

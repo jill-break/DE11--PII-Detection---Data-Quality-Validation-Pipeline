@@ -1,0 +1,7 @@
+2026-02-04 17:50:59,870 | INFO | Starting Exploratory Data Quality Analysis on data/raw_data.csv
+2026-02-04 17:50:59,871 | ERROR | File not found: data/raw_data.csv
+2026-02-04 17:52:11,098 | INFO | Starting Exploratory Data Quality Analysis on ./data/customers_raw.csv
+2026-02-04 17:52:11,104 | INFO | Successfully loaded 10 rows.
+2026-02-04 17:52:11,113 | WARNING | Found 2 rows with non-standard phone formats.
+2026-02-04 17:52:11,117 | INFO | Uniqueness check passed for customer_id.
+2026-02-04 17:52:11,120 | INFO | Quality report generated at data_quality_report.txt

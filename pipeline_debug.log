@@ -1,0 +1,4 @@
+2026-02-04 17:59:33,278 | INFO | Starting Exploratory Data Quality Analysis on ./data/customers_raw.csv
+2026-02-04 17:59:33,312 | INFO | Successfully loaded 10 rows.
+2026-02-04 17:59:33,322 | WARNING | Found 2 rows with non-standard phone formats.
+2026-02-04 17:59:33,326 | INFO | Uniqueness check passed for customer_id.
