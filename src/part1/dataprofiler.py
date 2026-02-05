@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 from src.utils.logger_config import setup_pipeline_logger
+# from ..tils.logger_config import setup_pipeline_logger
 
 # Initialize logger using the utility
 logger = setup_pipeline_logger(name="Profiler")
@@ -48,13 +49,13 @@ class DataProfiler:
         
         # Simple type map for reporting
         expected = {
-            "customer_id": "INT ✅",
-            "first_name": "STRING ✅",
-            "last_name": "STRING ✅",
-            "email": "STRING ✅",
-            "phone": "STRING ✅",
-            "address": "STRING ✅",
-            "account_status": "STRING ✅"
+            "customer_id": "INT",
+            "first_name": "STRING",
+            "last_name": "STRING",
+            "email": "STRING",
+            "phone": "STRING",
+            "address": "STRING",
+            "account_status": "STRING"
         }
         
         for col, status in expected.items():
@@ -63,10 +64,10 @@ class DataProfiler:
 
         # Date and Numeric specific logic
         if any(self.df['date_of_birth'].astype(str).str.contains('/|invalid')):
-            self.report_lines.append("- date_of_birth: STRING ❌ (should be DATE)")
+            self.report_lines.append("- date_of_birth: STRING  (should be DATE)")
         
         if self.df['income'].dtype == 'object' or self.df['income'].isna().any():
-            self.report_lines.append("- income: NUMERIC ❌ (detected as Mixed/Object)")
+            self.report_lines.append("- income: NUMERIC  (detected as Mixed/Object)")
 
     def _check_quality_issues(self):
         """Scans for specific formatting and logic violations."""

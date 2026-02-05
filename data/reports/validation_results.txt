@@ -1,0 +1,11 @@
+VALIDATION RESULTS (GX 1.x)
+==================
+PASS: 6 expectations passed
+FAIL: 1 expectations failed
+SUCCESS RATE: 85.71%
+
+DETAILED FAILURES:
+-------------------
+date_of_birth:
+- Issue: expect_column_values_to_match_strftime_format
+- Sample Failures: ['Invalid values found']
