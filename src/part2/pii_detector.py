@@ -22,6 +22,7 @@ class PIIDetector:
         """Scans the dataframe for PII patterns and populates risk results."""
         logger.info("Starting PII scanning process...")
         
+        
         # 1. Scanning Emails (Pattern Match)
         email_matches = self.df['email'].apply(lambda x: bool(re.search(self.patterns['email'], str(x))))
         self.risk_results['emails'] = email_matches.sum()
