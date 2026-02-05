@@ -19,3 +19,41 @@
 2026-02-04 18:26:12,744 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
 2026-02-04 18:26:12,761 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
 2026-02-04 18:26:12,771 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-04 18:26:42,775 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-04 18:26:42,793 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-04 18:26:42,798 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-04 18:33:06,135 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-04 18:33:06,137 | FintechPipeline | INFO | Data directory verified.
+2026-02-04 18:35:13,552 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-04 18:35:13,554 | FintechPipeline | INFO | Data directory verified.
+2026-02-04 18:35:20,391 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-04 18:35:20,406 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-04 18:35:20,412 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-04 18:37:36,531 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-04 18:37:36,533 | FintechPipeline | INFO | Data directory verified.
+2026-02-04 18:37:36,575 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-04 18:37:36,594 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-04 18:37:36,600 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-04 18:38:17,911 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-04 18:38:17,915 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-04 18:39:19,241 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-04 18:39:19,244 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-04 18:41:11,908 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-04 18:41:11,910 | FintechPipeline | INFO | Data directory verified.
+2026-02-04 18:41:11,945 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-04 18:41:11,959 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-04 18:41:11,964 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-04 18:41:11,988 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-04 18:41:11,993 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-04 18:41:11,997 | PIIDetector | INFO | PII Detection Report saved to ../src/part2/report/pii_detection_report.txt
+2026-02-05 07:10:56,853 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-05 07:10:56,857 | FintechPipeline | INFO | Data directory verified.
+2026-02-05 07:10:56,942 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-05 07:10:56,961 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-05 07:10:56,969 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-05 07:10:56,994 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-05 07:10:56,999 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-05 07:10:57,009 | PIIDetector | INFO | PII Detection Report saved to ../src/part2/report/pii_detection_report.txt
+2026-02-05 07:13:40,628 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-05 07:13:40,633 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-05 07:13:40,640 | PIIDetector | INFO | PII Detection Report saved to ../src/part2/report/pii_detection_report.txt
