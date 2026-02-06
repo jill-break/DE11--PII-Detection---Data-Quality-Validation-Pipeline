@@ -18,30 +18,39 @@ class FintechGXValidator:
         )
         
     def build_expectations(self):
-        logger.info(f"Building Expectations for suite: {self.suite_name}")
+        logger.info(f"Building Strict Expectations for suite: {self.suite_name}")
         
-        # Define expectations using the new 1.x object model
         expectations = [
-            # customer_id
+            # 1. ID: Must be unique, positive, and NOT NULL
+            gx.expectations.ExpectColumnValuesToNotBeNull(column="customer_id"),
             gx.expectations.ExpectColumnValuesToBeUnique(column="customer_id"),
             gx.expectations.ExpectColumnValuesToBeBetween(column="customer_id", min_value=1),
             
-            # Names
+            # 2. Names: Must NOT BE NULL + Length + Regex
+            gx.expectations.ExpectColumnValuesToNotBeNull(column="first_name"),
             gx.expectations.ExpectColumnValueLengthsToBeBetween(column="first_name", min_value=2, max_value=50),
             gx.expectations.ExpectColumnValuesToMatchRegex(column="first_name", regex=r"^[a-zA-Z\s]+$"),
+
+            gx.expectations.ExpectColumnValuesToNotBeNull(column="last_name"),
+            gx.expectations.ExpectColumnValueLengthsToBeBetween(column="last_name", min_value=2, max_value=50),
             
-            # Income
+            # 3. Income: Must NOT BE NULL + Range
+            gx.expectations.ExpectColumnValuesToNotBeNull(column="income"),
             gx.expectations.ExpectColumnValuesToBeBetween(column="income", min_value=0, max_value=10_000_000),
             
-            # Account Status
+            # 4. Account Status: Must NOT BE NULL + Set
+            gx.expectations.ExpectColumnValuesToNotBeNull(column="account_status"),
             gx.expectations.ExpectColumnValuesToBeInSet(
                 column="account_status", 
                 value_set=["active", "inactive", "suspended"]
             ),
             
-            # Date Formats
+            # 5. Dates: Valid Format
             gx.expectations.ExpectColumnValuesToMatchStrftimeFormat(
                 column="date_of_birth", strftime_format="%Y-%m-%d"
+            ),
+            gx.expectations.ExpectColumnValuesToMatchStrftimeFormat(
+                column="created_date", strftime_format="%Y-%m-%d"
             )
         ]
         
