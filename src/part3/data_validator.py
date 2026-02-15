@@ -89,30 +89,52 @@ class FintechGXValidator:
         return result
 
     def _generate_custom_report(self, result, report_path):
-        """Maps GX result objects back to your required text format."""
+        """Forensic mapping of GX results to the required deliverable format."""
         stats = result.statistics
+        # Calculate row-level failure estimation (GX doesn't give this directly, so we infer)
+        failed_indices = set()
+        
         report = [
             "VALIDATION RESULTS (GX 1.x)",
             "==================",
-            f"PASS: {stats['successful_expectations']} expectations passed",
+            f"PASS: {stats['successful_expectations']} expectations met",
             f"FAIL: {stats['unsuccessful_expectations']} expectations failed",
             f"SUCCESS RATE: {stats['success_percent']:.2f}%",
             "",
-            "DETAILED FAILURES:",
+            "DETAILED FAILURES BY COLUMN:",
             "-------------------"
         ]
         
         for res in result.results:
             if not res.success:
                 col = res.expectation_config.kwargs.get('column', 'Table-Level')
-                msg = res.result.get('unexpected_list', ['Invalid values found'])
+                # Get the actual indices of the bad rows
+                indices = res.result.get('unexpected_index_list', [])
+                # Convert to 1-based indexing for business reporting
+                human_indices = [idx + 1 for idx in indices]
+                
+                # Tracking unique failed rows for the summary
+                failed_indices.update(human_indices)
+                
                 report.append(f"{col}:")
                 report.append(f"- Issue: {res.expectation_config.type}")
-                report.append(f"- Sample Failures: {msg[:3]}")
+                
+                if human_indices:
+                    # Format as: Row 3, Row 5, Row 10
+                    rows_str = ", ".join([f"Row {i}" for i in human_indices[:10]])
+                    report.append(f"- Failed Rows: {rows_str}")
+                
+                # Show the actual bad data found in those rows
+                bad_values = res.result.get('partial_unexpected_list', [])
+                if bad_values:
+                    report.append(f"- Sample Values: {bad_values[:3]}")
                 report.append("")
+
+        # Add a summary of total impacted rows
+        report.insert(5, f"IMPACT: {len(failed_indices)} distinct rows failed at least one check.")
 
         Path(report_path).parent.mkdir(parents=True, exist_ok=True)
         with open(report_path, 'w') as f:
             f.write("\n".join(report))
             
-        logger.info(f"GX Report saved to {report_path}")
+        logger.info(f"Forensic GX Report saved to {report_path}")
