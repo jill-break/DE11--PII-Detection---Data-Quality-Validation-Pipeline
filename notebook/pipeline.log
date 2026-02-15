@@ -149,3 +149,25 @@
 2026-02-05 10:30:34,205 | GXValidator_V1 | INFO | Building Expectations for suite: fintech_suite
 2026-02-05 10:30:34,221 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
 2026-02-05 10:30:34,418 | GXValidator_V1 | INFO | GX Report saved to ../data/reports/validation_results.txt
+2026-02-15 15:01:35,831 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-15 15:01:35,833 | FintechPipeline | INFO | Data directory verified.
+2026-02-15 15:01:38,930 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-15 15:01:38,952 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-15 15:01:38,964 | Profiler | INFO | Analysis complete. Report saved to: ../data/reports/data_quality_report.txt
+2026-02-15 15:01:42,438 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-15 15:01:42,443 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-15 15:01:42,447 | PIIDetector | INFO | PII Detection Report saved to ../data/reports/pii_detection_report.txt
+2026-02-15 15:01:46,516 | GXValidator_V1 | INFO | Building Strict Expectations for suite: fintech_suite
+2026-02-15 15:01:46,612 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-15 15:01:47,105 | GXValidator_V1 | INFO | Forensic GX Report saved to ../data/reports/validation_results.txt
+2026-02-15 15:08:16,888 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-15 15:08:16,891 | FintechPipeline | INFO | Data directory verified.
+2026-02-15 15:08:24,041 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-15 15:08:24,132 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-15 15:08:24,553 | GXValidator_V1 | INFO | Forensic GX Report saved to report/validation_final.txt
+2026-02-15 15:08:24,557 | Remediator | INFO | Cleaning log saved to report/cleaning_log.txt
+2026-02-15 15:11:32,788 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-15 15:11:32,892 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-15 15:11:33,421 | GXValidator_V1 | INFO | Forensic GX Report saved to ../data/reports/validation_final.txt
+2026-02-15 15:11:33,425 | Remediator | INFO | Cleaning log saved to ../data/reports/cleaning_log.txt
+2026-02-15 15:11:33,433 | FintechPipeline | INFO | Pipeline Execution Complete. Golden Dataset generated.
