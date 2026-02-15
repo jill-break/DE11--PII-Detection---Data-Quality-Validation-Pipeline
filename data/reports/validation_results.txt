@@ -1,32 +1,12 @@
 VALIDATION RESULTS (GX 1.x)
 ==================
-PASS: 8 expectations met
-FAIL: 6 expectations failed
-SUCCESS RATE: 57.14%
+PASS: 13 expectations met
+FAIL: 1 expectations failed
+SUCCESS RATE: 92.86%
 IMPACT: 0 distinct rows failed at least one check.
 
 DETAILED FAILURES BY COLUMN:
 -------------------
-first_name:
-- Issue: expect_column_values_to_not_be_null
-- Sample Values: [nan]
-
-last_name:
-- Issue: expect_column_values_to_not_be_null
-- Sample Values: [nan]
-
-income:
-- Issue: expect_column_values_to_not_be_null
-- Sample Values: [nan]
-
 account_status:
-- Issue: expect_column_values_to_not_be_null
-- Sample Values: [nan]
-
-date_of_birth:
-- Issue: expect_column_values_to_match_strftime_format
-- Sample Values: ['1975/05/10', 'invalid_date']
-
-created_date:
-- Issue: expect_column_values_to_match_strftime_format
-- Sample Values: ['01/15/2024', 'invalid_date']
+- Issue: expect_column_values_to_be_in_set
+- Sample Values: ['unknown']

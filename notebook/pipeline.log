@@ -171,3 +171,7 @@
 2026-02-15 15:11:33,421 | GXValidator_V1 | INFO | Forensic GX Report saved to ../data/reports/validation_final.txt
 2026-02-15 15:11:33,425 | Remediator | INFO | Cleaning log saved to ../data/reports/cleaning_log.txt
 2026-02-15 15:11:33,433 | FintechPipeline | INFO | Pipeline Execution Complete. Golden Dataset generated.
+2026-02-15 15:16:50,662 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-15 15:16:50,664 | FintechPipeline | INFO | Data directory verified.
+2026-02-15 15:16:55,841 | DataMasker | INFO | Masked dataset saved to ../data/processed/customers_masked.csv
+2026-02-15 15:16:55,846 | DataMasker | INFO | Masked sample report generated at ../data/reports/masked_sample.txt
