@@ -1,4 +1,3 @@
-# src/part3/gx_validator.py
 import great_expectations as gx
 import pandas as pd
 from pathlib import Path
@@ -12,7 +11,7 @@ class FintechGXValidator:
         self.suite_name = suite_name
         self.context = gx.get_context()
         
-        # 1. Setup the Suite
+        # Setup the Suite
         self.suite = self.context.suites.add(
             gx.ExpectationSuite(name=self.suite_name)
         )
@@ -62,13 +61,13 @@ class FintechGXValidator:
     def validate(self, report_path: str):
         logger.info("Starting GX 1.x Validation execution...")
         
-        # 2. Setup Data Source & Asset (Fluent API)
+        # Setup Data Source & Asset (Fluent API)
         # Using a unique name to avoid collisions if re-run in a notebook
         ds_name = f"pandas_datasource_{pd.Timestamp.now().strftime('%M%S')}"
         datasource = self.context.data_sources.add_pandas(name=ds_name)
         asset = datasource.add_dataframe_asset(name="raw_customers")
         
-        # 3. Create Batch Definition & Validation Definition
+        # Create Batch Definition & Validation Definition
         batch_definition = asset.add_batch_definition_whole_dataframe("all_rows")
         batch = batch_definition.get_batch(batch_parameters={"dataframe": self.df})
         
@@ -80,10 +79,10 @@ class FintechGXValidator:
             )
         )
         
-        # 4. Run Validation
+        # Run Validation
         result = validation_definition.run(batch_parameters={"dataframe": self.df})
         
-        # 5. Extract results for the deliverable
+        # Extract results for the deliverable
         self._generate_custom_report(result, report_path)
         
         return result

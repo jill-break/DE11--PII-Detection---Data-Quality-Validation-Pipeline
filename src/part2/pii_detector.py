@@ -1,4 +1,3 @@
-# src/pii_detector.py
 import pandas as pd
 import re
 from pathlib import Path
@@ -44,12 +43,8 @@ class PIIDetector:
 
     def generate_report(self, output_path: str):
         """Formats the scan results into the required delivery format."""
-
-        # --- DEFENSIVE FIX START ---
         out_path = Path(output_path)
-        # Create parents (src, part2, report) if they don't exist
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        # --- DEFENSIVE FIX END ---
         
         total = len(self.df)
         

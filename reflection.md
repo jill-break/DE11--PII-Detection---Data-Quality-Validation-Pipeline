@@ -1,10 +1,10 @@
-This reflection serves as the final governance and operational audit for the **Fintech Customer Ingestion Pipeline**. As I transition from raw data chaos to a secure, validated "Golden Record," I must evaluate the technical and ethical implications of our engineering choices.
+This reflection serves as the final governance and operational audit for the **Fintech Customer Ingestion Pipeline**. As I transition from raw data chaos to a secure, validated "Golden Record," I must evaluate the technical and ethical implications of my engineering choices.
 
 ----------
 
 ## 1. Data Quality Forensic Audit
 
-The raw dataset was a textbook example of "Data Decay." Our profiling and validation stages identified five critical issues that would have compromised downstream financial analytics:
+The raw dataset was a textbook example of "Data Decay." My profiling and validation stages identified five critical issues that would have compromised downstream financial analytics:
 
 | Top 5 Problems           | Remediation Strategy                                                                 | Business Impact                                                                 |
 |--------------------------|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -19,7 +19,7 @@ The raw dataset was a textbook example of "Data Decay." Our profiling and valida
 
 ## 2. PII Risk & Privacy Assessment
 
-Our detection logic flagged five high-risk PII categories: **Full Names, Emails, Phone Numbers, Physical Addresses, and Dates of Birth.**
+My detection logic flagged five high-risk PII categories: **Full Names, Emails, Phone Numbers, Physical Addresses, and Dates of Birth.**
 
 -   **Sensitivity:** In a fintech context, this is a "Identity Kit." A combination of Name, DOB, and Address is the baseline required to bypass security questions or open fraudulent accounts (Identity Theft).
     
@@ -43,7 +43,7 @@ Data masking is a deliberate act of **Data Devaluation** for the sake of **Secur
 
 ## 4. Validation Strategy & Evolution
 
-Our Great Expectations (GX) suite acted as a "Data Gatekeeper." It successfully caught format and null violations that simple logic would have missed.
+My Great Expectations (GX) suite acted as a "Data Gatekeeper." It successfully caught format and null violations that simple logic would have missed.
 
 -   **What was missed:** The validator cannot easily verify "Semantic Accuracy." For example, if a user enters `Fake@email.com`, it passes the _format_ check but fails the _reality_ check.
     
@@ -67,7 +67,7 @@ In a live fintech environment, this pipeline would not be a manual script.
 
 ## 6. Lessons Learned
 
--   **Surprise:** I was surprised by how "pedantic" Great Expectations is with null handling. It forced me to be much more explicit about my data assumptions.
+-   **Surprise:** I was surprised by how precise Great Expectations is with null handling. It forced me to be much more explicit about my data assumptions.
     
 -   **Hardest Part:** Handling character encoding (`UTF-8` vs `cp1252`) was more frustrating than the actual data logic. It’s a reminder that "Data Engineering" is 50% data logic and 50% environment management.
     

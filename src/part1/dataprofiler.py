@@ -1,9 +1,7 @@
-# data_profiler.py
 import pandas as pd
 import numpy as np
 from pathlib import Path
 from src.utils.logger_config import setup_pipeline_logger
-# from ..tils.logger_config import setup_pipeline_logger
 
 # Initialize logger using the utility
 logger = setup_pipeline_logger(name="Profiler")

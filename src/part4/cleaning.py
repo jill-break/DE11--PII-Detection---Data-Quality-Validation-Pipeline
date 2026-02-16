@@ -34,7 +34,7 @@ class DataRemediator:
                 return f"{digits[:3]}-{digits[3:6]}-{digits[6:]}"
             return val
 
-        # We only count it as a fix if the format changed
+        # only count it as a fix if the format changed
         self.df['phone'] = self.df['phone'].apply(format_phone)
         return self
 
