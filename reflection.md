@@ -4,7 +4,7 @@ This reflection serves as the final governance and operational audit for the **F
 
 ## 1. Data Quality Forensic Audit
 
-The raw dataset was a textbook example of "Data Decay." My profiling and validation stages identified five critical issues that would have compromised downstream financial analytics:
+The raw dataset was an example of "Data Decay." My profiling and validation stages identified five critical issues that would have compromised downstream financial analytics:
 
 | Top 5 Problems           | Remediation Strategy                                                                 | Business Impact                                                                 |
 |--------------------------|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -69,7 +69,7 @@ In a live fintech environment, this pipeline would not be a manual script.
 
 -   **Surprise:** I was surprised by how precise Great Expectations is with null handling. It forced me to be much more explicit about my data assumptions.
     
--   **Hardest Part:** Handling character encoding (`UTF-8` vs `cp1252`) was more frustrating than the actual data logic. It’s a reminder that "Data Engineering" is 50% data logic and 50% environment management.
+-   **Hardest Part:** Standardizing messy dates and phone formats was hard. Managing Windows encoding crashes and shifting library APIs like Great Expectations was even tougher. It’s a true test of real-world engineering skills..
     
 -   **Next Time:** I would implement a **"Reject" stream**. Instead of filling missing values with `[UNKNOWN]`, I would move those specific rows into a separate file for the business team to fix at the source.
     

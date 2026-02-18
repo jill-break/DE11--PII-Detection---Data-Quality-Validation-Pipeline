@@ -69,8 +69,6 @@ python main.py
 -   `validation_results.txt`: Forensic audit of data quality failures.
 ---
 ### 4. The `requirements.txt`
-
-Ensure everyone running your code has the same library versions.
 ```
 pandas>=2.0.0
 great-expectations>=1.0.0
