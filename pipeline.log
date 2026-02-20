@@ -1,0 +1,421 @@
+2026-02-15 15:24:34,904 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-15 15:24:35,069 | GXValidator_V1 | INFO | Building Strict Expectations for suite: fintech_suite
+2026-02-15 15:24:35,207 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-15 15:24:35,662 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-15 15:24:35,666 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-15 15:24:35,668 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-15 15:24:35,672 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-15 15:24:35,694 | Orchestrator | ERROR | Pipeline crashed: 'charmap' codec can't encode character '\u2713' in position 103: character maps to <undefined>
+2026-02-15 15:28:01,827 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-15 15:28:01,883 | GXValidator_V1 | INFO | Building Strict Expectations for suite: fintech_suite
+2026-02-15 15:28:01,982 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-15 15:28:02,386 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-15 15:28:02,396 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-15 15:28:02,400 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-15 15:28:02,403 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-15 15:28:02,428 | Orchestrator | ERROR | Pipeline crashed: 'charmap' codec can't encode character '\u2713' in position 103: character maps to <undefined>
+2026-02-15 15:31:51,764 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-15 15:31:51,764 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-15 15:31:51,778 | Orchestrator | INFO | Stage 2: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (3 rows)
+[DONE] Filled missing values (5 rows)
+2026-02-15 15:31:51,794 | GXValidator_V1 | INFO | Building Strict Expectations for suite: fintech_suite
+2026-02-15 15:31:51,903 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-15 15:31:52,254 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-15 15:31:52,254 | Orchestrator | INFO | Stage 3: VALIDATE: [FAIL] schema validation
+- Results saved to validation_results.txt
+2026-02-15 15:31:52,254 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-15 15:31:52,256 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-15 15:31:52,258 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-15 15:31:52,258 | Orchestrator | INFO | Stage 4: DETECT PII: [DONE] Scanned for PII patterns:
+- Emails: 10
+- Phones: 10
+- Addresses: 10
+- DOBs: 8
+2026-02-15 15:31:52,261 | Orchestrator | INFO | Stage 5: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Addresses, DOBs)
+2026-02-15 15:31:52,265 | Orchestrator | INFO | Stage 6: SAVE: [DONE] Saved outputs:
+- ..\data\processed\customers_masked.csv
+- Validation and PII reports generated.
+2026-02-15 15:31:52,266 | Orchestrator | INFO | Final execution report successfully written to data\reports\pipeline_execution_report.txt
+2026-02-20 08:32:04,288 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 08:32:04,289 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 08:32:04,317 | Orchestrator | INFO | Stage 2: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (3 rows)
+[DONE] Filled missing values (5 rows)
+2026-02-20 08:32:04,334 | GXValidator_V1 | INFO | Building Strict Expectations for suite: fintech_suite
+2026-02-20 08:32:04,424 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 08:32:04,849 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-20 08:32:04,850 | Orchestrator | INFO | Stage 3: VALIDATE: [FAIL] schema validation
+- Results saved to validation_results.txt
+2026-02-20 08:32:04,850 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 08:32:04,853 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 08:32:04,855 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-20 08:32:04,855 | Orchestrator | INFO | Stage 4: DETECT PII: [DONE] Scanned for PII patterns:
+- Emails: 10
+- Phones: 10
+- Addresses: 10
+- DOBs: 8
+2026-02-20 08:32:04,859 | Orchestrator | INFO | Stage 5: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Addresses, DOBs)
+2026-02-20 08:32:04,865 | Orchestrator | INFO | Stage 6: SAVE: [DONE] Saved outputs:
+- ..\data\processed\customers_masked.csv
+- Validation and PII reports generated.
+2026-02-20 08:32:04,866 | Orchestrator | INFO | Final execution report successfully written to data\reports\pipeline_execution_report.txt
+2026-02-20 08:43:14,718 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 08:43:14,718 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 08:43:14,729 | Orchestrator | INFO | Stage 2: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (3 rows)
+[DONE] Filled missing values (9 rows)
+2026-02-20 08:43:14,739 | GXValidator_V1 | INFO | Building Strict Expectations for suite: fintech_suite
+2026-02-20 08:43:14,795 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 08:43:14,996 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-20 08:43:14,996 | Orchestrator | INFO | Stage 3: VALIDATE: [FAIL] schema validation
+- Results saved to validation_results.txt
+2026-02-20 08:43:14,996 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 08:43:14,999 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 08:43:15,000 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-20 08:43:15,000 | Orchestrator | INFO | Stage 4: DETECT PII: [DONE] Scanned for PII patterns:
+- Emails: 10
+- Phones: 10
+- Addresses: 10
+- DOBs: 10
+2026-02-20 08:43:15,002 | Orchestrator | INFO | Stage 5: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Addresses, DOBs)
+2026-02-20 08:43:15,004 | Orchestrator | INFO | Stage 6: SAVE: [DONE] Saved outputs:
+- ..\data\processed\customers_masked.csv
+- Validation and PII reports generated.
+2026-02-20 08:43:15,006 | Orchestrator | INFO | Final execution report successfully written to data\reports\pipeline_execution_report.txt
+2026-02-20 09:07:29,333 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 09:07:29,333 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 09:07:29,347 | Orchestrator | INFO | Stage 2: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (1 rows)
+[DONE] Filled missing values (9 rows)
+2026-02-20 09:07:29,356 | GXValidator_V1 | INFO | Building Strict Expectations for suite: fintech_suite
+2026-02-20 09:07:29,410 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:07:29,627 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-20 09:07:29,627 | Orchestrator | INFO | Stage 3: VALIDATE: [FAIL] schema validation
+- Results saved to validation_results.txt
+2026-02-20 09:07:29,627 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 09:07:29,629 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 09:07:29,630 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-20 09:07:29,630 | Orchestrator | INFO | Stage 4: DETECT PII: [DONE] Scanned for PII patterns:
+- Emails: 10
+- Phones: 10
+- Addresses: 10
+- DOBs: 10
+2026-02-20 09:07:29,632 | Orchestrator | INFO | Stage 5: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Addresses, DOBs)
+2026-02-20 09:07:29,634 | Orchestrator | INFO | Stage 6: SAVE: [DONE] Saved outputs:
+- ..\data\processed\customers_masked.csv
+- Validation and PII reports generated.
+2026-02-20 09:07:29,636 | Orchestrator | INFO | Final execution report successfully written to data\reports\pipeline_execution_report.txt
+2026-02-20 09:11:35,894 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 09:11:35,894 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 09:11:35,904 | Orchestrator | INFO | Stage 2: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (1 rows)
+[DONE] Filled missing values (9 rows)
+2026-02-20 09:11:35,916 | GXValidator_V1 | INFO | Building Strict Expectations for suite: fintech_suite
+2026-02-20 09:11:35,966 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:11:36,191 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-20 09:11:36,191 | Orchestrator | INFO | Stage 3: VALIDATE: [FAIL] schema validation
+- Results saved to validation_results.txt
+2026-02-20 09:11:36,191 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 09:11:36,192 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 09:11:36,192 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-20 09:11:36,192 | Orchestrator | INFO | Stage 4: DETECT PII: [DONE] Scanned for PII patterns:
+- Emails: 10
+- Phones: 10
+- Addresses: 10
+- DOBs: 10
+2026-02-20 09:11:36,196 | Orchestrator | INFO | Stage 5: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Addresses, DOBs)
+2026-02-20 09:11:36,201 | Orchestrator | INFO | Stage 6: SAVE: [DONE] Saved outputs:
+- data\processed\customers_masked.csv
+- Validation and PII reports generated.
+2026-02-20 09:11:36,202 | Orchestrator | INFO | Final execution report successfully written to data\reports\pipeline_execution_report.txt
+2026-02-20 09:13:33,655 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 09:13:33,656 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 09:13:33,665 | Orchestrator | INFO | Stage 2: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (1 rows)
+[DONE] Filled missing values (9 rows)
+2026-02-20 09:13:33,675 | GXValidator_V1 | INFO | Building Strict Expectations for suite: fintech_suite
+2026-02-20 09:13:33,728 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:13:33,950 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-20 09:13:33,951 | Orchestrator | INFO | Stage 3: VALIDATE: [FAIL] schema validation
+- Results saved to validation_results.txt
+2026-02-20 09:13:33,951 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 09:13:33,953 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 09:13:33,954 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-20 09:13:33,954 | Orchestrator | INFO | Stage 4: DETECT PII: [DONE] Scanned for PII patterns:
+- Emails: 10
+- Phones: 10
+- Addresses: 10
+- DOBs: 10
+2026-02-20 09:13:33,955 | Orchestrator | INFO | Stage 5: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Addresses, DOBs)
+2026-02-20 09:13:33,959 | Orchestrator | INFO | Stage 6: SAVE: [DONE] Saved outputs:
+- data\processed\customers_masked.csv
+- Validation and PII reports generated.
+2026-02-20 09:13:33,960 | Orchestrator | INFO | Final execution report successfully written to data\reports\pipeline_execution_report.txt
+2026-02-20 09:14:46,280 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 09:14:46,280 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 09:14:46,301 | Orchestrator | INFO | Stage 2: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (1 rows)
+[DONE] Filled missing values (9 rows)
+2026-02-20 09:14:46,316 | GXValidator_V1 | INFO | Building Strict Expectations for suite: fintech_suite
+2026-02-20 09:14:46,399 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:14:46,773 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-20 09:14:46,774 | Orchestrator | INFO | Stage 3: VALIDATE: [FAIL] schema validation
+- Results saved to validation_results.txt
+2026-02-20 09:14:46,774 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 09:14:46,777 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 09:14:46,779 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-20 09:14:46,780 | Orchestrator | INFO | Stage 4: DETECT PII: [DONE] Scanned for PII patterns:
+- Emails: 10
+- Phones: 10
+- Addresses: 10
+- DOBs: 10
+2026-02-20 09:14:46,785 | Orchestrator | INFO | Stage 5: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Addresses, DOBs)
+2026-02-20 09:14:46,790 | Orchestrator | INFO | Stage 6: SAVE: [DONE] Saved outputs:
+- data\processed\customers_masked.csv
+- Validation and PII reports generated.
+2026-02-20 09:14:46,791 | Orchestrator | INFO | Final execution report successfully written to data\reports\pipeline_execution_report.txt
+2026-02-20 09:18:12,623 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 09:18:12,623 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 09:18:12,633 | GXValidator_V1 | INFO | Building Strict Expectations for suite: raw_suite
+2026-02-20 09:18:12,683 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:18:12,892 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results_raw.txt
+2026-02-20 09:18:12,892 | Orchestrator | INFO | Stage 2: VALIDATE (RAW): [DONE] Initial validation: 6 failures
+2026-02-20 09:18:12,901 | Orchestrator | INFO | Stage 3: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (1 rows)
+[DONE] Filled missing values (9 rows)
+2026-02-20 09:18:12,908 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-20 09:18:12,958 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:18:13,150 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-20 09:18:13,150 | Orchestrator | INFO | Stage 4: VALIDATE (CLEANED): [FAIL] post-cleaning validation: 4 failures
+2026-02-20 09:18:13,150 | Remediator | INFO | Cleaning log saved to data\reports\cleaning_log.txt
+2026-02-20 09:18:13,151 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 09:18:13,151 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 09:18:13,152 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-20 09:18:13,154 | Orchestrator | INFO | Stage 6: DETECT PII: [DONE] Scanned for PII patterns
+- Emails found: 10
+- DOBs found: 10
+2026-02-20 09:18:13,155 | Orchestrator | INFO | Stage 7: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Address, DOB)
+2026-02-20 09:18:13,159 | Orchestrator | INFO | Stage 8: SAVE: [DONE] Saved outputs:
+- data\processed\customers_cleaned.csv
+- data\processed\customers_masked.csv
+2026-02-20 09:20:41,092 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 09:20:41,092 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 09:20:41,103 | GXValidator_V1 | INFO | Building Strict Expectations for suite: raw_suite
+2026-02-20 09:20:41,160 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:20:41,367 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results_raw.txt
+2026-02-20 09:20:41,367 | Orchestrator | INFO | Stage 2: VALIDATE (RAW): [DONE] Initial validation: 6 failures
+2026-02-20 09:20:41,378 | Orchestrator | INFO | Stage 3: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (1 rows)
+[DONE] Filled missing values (9 rows)
+2026-02-20 09:20:41,387 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-20 09:20:41,449 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:20:41,648 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-20 09:20:41,648 | Orchestrator | INFO | Stage 4: VALIDATE (CLEANED): [FAIL] post-cleaning validation: 4 failures
+2026-02-20 09:20:41,650 | Remediator | INFO | Cleaning log saved to data\reports\cleaning_log.txt
+2026-02-20 09:20:41,651 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 09:20:41,651 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 09:20:41,653 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-20 09:20:41,653 | Orchestrator | INFO | Stage 6: DETECT PII: [DONE] Scanned for PII patterns
+- Emails found: 10
+- DOBs found: 10
+2026-02-20 09:20:41,655 | Orchestrator | INFO | Stage 7: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Address, DOB)
+2026-02-20 09:20:41,660 | Orchestrator | INFO | Stage 8: SAVE: [DONE] Saved outputs:
+- data\processed\customers_cleaned.csv
+- data\processed\customers_masked.csv
+2026-02-20 09:33:51,540 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 09:33:51,540 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 09:33:51,540 | Orchestrator | ERROR | [CRASH] Pipeline failed: 'DataProfiler' object has no attribute 'profile'
+2026-02-20 09:39:07,125 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 09:39:07,125 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 09:39:07,136 | GXValidator_V1 | INFO | Building Strict Expectations for suite: raw_suite
+2026-02-20 09:39:07,189 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:39:07,404 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results_raw.txt
+2026-02-20 09:39:07,404 | Orchestrator | INFO | Stage 2: VALIDATE (RAW): [DONE] Initial validation: 6 failures
+2026-02-20 09:39:07,410 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-20 09:39:07,413 | Profiler | INFO | Analysis complete. Report saved to: data\reports\data_profile_report.txt
+2026-02-20 09:39:07,427 | Orchestrator | INFO | Stage 3: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (1 rows)
+[DONE] Filled missing values (9 rows)
+2026-02-20 09:39:07,433 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-20 09:39:07,484 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:39:07,687 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-20 09:39:07,689 | Orchestrator | INFO | Stage 4: VALIDATE (CLEANED): [FAIL] post-cleaning validation: 4 failures
+2026-02-20 09:39:07,691 | Remediator | INFO | Cleaning log saved to data\reports\cleaning_log.txt
+2026-02-20 09:39:07,691 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 09:39:07,692 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 09:39:07,692 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-20 09:39:07,692 | Orchestrator | INFO | Stage 6: DETECT PII: [DONE] Scanned for PII patterns
+- Emails found: 10
+- DOBs found: 10
+2026-02-20 09:39:07,698 | DataMasker | INFO | Masked sample report generated at data\reports\masked_sample.txt
+2026-02-20 09:39:07,698 | Orchestrator | INFO | Stage 7: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Address, DOB)
+2026-02-20 09:39:07,703 | Orchestrator | INFO | Stage 8: SAVE: [DONE] Saved outputs:
+- data\processed\customers_cleaned.csv
+- data\processed\customers_masked.csv
+2026-02-20 09:42:46,607 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 09:42:46,608 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 09:42:46,619 | GXValidator_V1 | INFO | Building Strict Expectations for suite: raw_suite
+2026-02-20 09:42:46,718 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:42:47,050 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results_raw.txt
+2026-02-20 09:42:47,050 | Orchestrator | INFO | Stage 2: VALIDATE (RAW): [DONE] Initial validation: 6 failures
+2026-02-20 09:42:47,057 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-20 09:42:47,061 | Profiler | INFO | Analysis complete. Report saved to: data\reports\data_profile_report.txt
+2026-02-20 09:42:47,071 | Orchestrator | INFO | Stage 3: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (1 rows)
+[DONE] Filled missing values (9 rows)
+2026-02-20 09:42:47,080 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-20 09:42:47,151 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:42:47,446 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-20 09:42:47,446 | Orchestrator | INFO | Stage 4: VALIDATE (CLEANED): [FAIL] post-cleaning validation: 4 failures
+2026-02-20 09:42:47,448 | Remediator | INFO | Cleaning log saved to data\reports\cleaning_log.txt
+2026-02-20 09:42:47,448 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 09:42:47,450 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 09:42:47,451 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-20 09:42:47,451 | Orchestrator | INFO | Stage 6: DETECT PII: [DONE] Scanned for PII patterns
+- Emails found: 10
+- DOBs found: 10
+2026-02-20 09:42:47,459 | DataMasker | INFO | Masked sample report generated at data\reports\masked_sample.txt
+2026-02-20 09:42:47,459 | Orchestrator | INFO | Stage 7: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Address, DOB)
+2026-02-20 09:42:47,463 | Orchestrator | INFO | Stage 8: SAVE: [DONE] Saved outputs:
+- data\processed\customers_cleaned.csv
+- data\processed\customers_masked.csv
+2026-02-20 09:43:51,014 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 09:43:51,015 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 09:43:51,028 | GXValidator_V1 | INFO | Building Strict Expectations for suite: raw_suite
+2026-02-20 09:43:51,097 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:43:51,412 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results_raw.txt
+2026-02-20 09:43:51,412 | Orchestrator | INFO | Stage 2: VALIDATE (RAW): [DONE] Initial validation: 6 failures
+2026-02-20 09:43:51,421 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-20 09:43:51,423 | Profiler | DEBUG | DEBUG: first_name values: ['John', 'Jane', nan, 'Mary', 'Robert', 'Patricia', 'Michael', 'Sarah', 'David', 'Jennifer']
+2026-02-20 09:43:51,426 | Profiler | INFO | Analysis complete. Report saved to: data\reports\data_profile_report.txt
+2026-02-20 09:43:51,439 | Orchestrator | INFO | Stage 3: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (1 rows)
+[DONE] Filled missing values (9 rows)
+2026-02-20 09:43:51,450 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-20 09:43:51,526 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:43:51,776 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-20 09:43:51,777 | Orchestrator | INFO | Stage 4: VALIDATE (CLEANED): [FAIL] post-cleaning validation: 4 failures
+2026-02-20 09:43:51,778 | Remediator | INFO | Cleaning log saved to data\reports\cleaning_log.txt
+2026-02-20 09:43:51,778 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 09:43:51,780 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 09:43:51,781 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-20 09:43:51,781 | Orchestrator | INFO | Stage 6: DETECT PII: [DONE] Scanned for PII patterns
+- Emails found: 10
+- DOBs found: 10
+2026-02-20 09:43:51,793 | DataMasker | INFO | Masked sample report generated at data\reports\masked_sample.txt
+2026-02-20 09:43:51,793 | Orchestrator | INFO | Stage 7: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Address, DOB)
+2026-02-20 09:43:51,796 | Orchestrator | INFO | Stage 8: SAVE: [DONE] Saved outputs:
+- data\processed\customers_cleaned.csv
+- data\processed\customers_masked.csv
+2026-02-20 09:44:12,035 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 09:44:12,035 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 09:44:12,048 | GXValidator_V1 | INFO | Building Strict Expectations for suite: raw_suite
+2026-02-20 09:44:12,112 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:44:12,383 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results_raw.txt
+2026-02-20 09:44:12,384 | Orchestrator | INFO | Stage 2: VALIDATE (RAW): [DONE] Initial validation: 6 failures
+2026-02-20 09:44:12,392 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-20 09:44:12,397 | Profiler | INFO | Analysis complete. Report saved to: data\reports\data_profile_report.txt
+2026-02-20 09:44:12,410 | Orchestrator | INFO | Stage 3: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (1 rows)
+[DONE] Filled missing values (9 rows)
+2026-02-20 09:44:12,419 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-20 09:44:12,489 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:44:12,759 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-20 09:44:12,759 | Orchestrator | INFO | Stage 4: VALIDATE (CLEANED): [FAIL] post-cleaning validation: 4 failures
+2026-02-20 09:44:12,760 | Remediator | INFO | Cleaning log saved to data\reports\cleaning_log.txt
+2026-02-20 09:44:12,761 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 09:44:12,762 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 09:44:12,763 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-20 09:44:12,763 | Orchestrator | INFO | Stage 6: DETECT PII: [DONE] Scanned for PII patterns
+- Emails found: 10
+- DOBs found: 10
+2026-02-20 09:44:12,769 | DataMasker | INFO | Masked sample report generated at data\reports\masked_sample.txt
+2026-02-20 09:44:12,771 | Orchestrator | INFO | Stage 7: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Address, DOB)
+2026-02-20 09:44:12,776 | Orchestrator | INFO | Stage 8: SAVE: [DONE] Saved outputs:
+- data\processed\customers_cleaned.csv
+- data\processed\customers_masked.csv
+2026-02-20 09:46:03,872 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 09:46:03,872 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 09:46:03,884 | GXValidator_V1 | INFO | Building Strict Expectations for suite: raw_suite
+2026-02-20 09:46:03,949 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:46:04,201 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results_raw.txt
+2026-02-20 09:46:04,201 | Orchestrator | INFO | Stage 2: VALIDATE (RAW): [DONE] Initial validation: 6 failures
+2026-02-20 09:46:04,213 | Profiler | INFO | Analysis complete. Report saved to: data\reports\data_profile_report.txt
+2026-02-20 09:46:04,226 | Orchestrator | INFO | Stage 3: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (1 rows)
+[DONE] Filled missing values (9 rows)
+2026-02-20 09:46:04,235 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-20 09:46:04,316 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:46:04,665 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-20 09:46:04,671 | Orchestrator | INFO | Stage 4: VALIDATE (CLEANED): [FAIL] post-cleaning validation: 4 failures
+2026-02-20 09:46:04,673 | Remediator | INFO | Cleaning log saved to data\reports\cleaning_log.txt
+2026-02-20 09:46:04,673 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 09:46:04,677 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 09:46:04,679 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-20 09:46:04,679 | Orchestrator | INFO | Stage 6: DETECT PII: [DONE] Scanned for PII patterns
+- Emails found: 10
+- DOBs found: 10
+2026-02-20 09:46:04,686 | DataMasker | INFO | Masked sample report generated at data\reports\masked_sample.txt
+2026-02-20 09:46:04,686 | Orchestrator | INFO | Stage 7: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Address, DOB)
+2026-02-20 09:46:04,693 | Orchestrator | INFO | Stage 8: SAVE: [DONE] Saved outputs:
+- data\processed\customers_cleaned.csv
+- data\processed\customers_masked.csv
+2026-02-20 09:49:14,287 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 09:49:14,288 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 09:49:14,297 | GXValidator_V1 | INFO | Building Strict Expectations for suite: raw_suite
+2026-02-20 09:49:14,357 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:49:14,601 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results_raw.txt
+2026-02-20 09:49:14,601 | Orchestrator | INFO | Stage 2: VALIDATE (RAW): [DONE] Initial validation: 6 failures
+2026-02-20 09:49:14,612 | Profiler | INFO | Analysis complete. Report saved to: data\reports\data_profile_report.txt
+2026-02-20 09:49:14,621 | Orchestrator | INFO | Stage 3: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized email formats (1 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (1 rows)
+[DONE] Filled missing values (9 rows)
+2026-02-20 09:49:14,629 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-20 09:49:14,679 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:49:14,877 | GXValidator_V1 | INFO | Forensic GX Report saved to data\reports\validation_results.txt
+2026-02-20 09:49:14,877 | Orchestrator | INFO | Stage 4: VALIDATE (CLEANED): [FAIL] post-cleaning validation: 4 failures
+2026-02-20 09:49:14,879 | Remediator | INFO | Cleaning log saved to data\reports\cleaning_log.txt
+2026-02-20 09:49:14,879 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 09:49:14,881 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 09:49:14,882 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-20 09:49:14,884 | Orchestrator | INFO | Stage 6: DETECT PII: [DONE] Scanned for PII patterns
+- Emails found: 10
+- DOBs found: 10
+2026-02-20 09:49:14,888 | DataMasker | INFO | Masked sample report generated at data\reports\masked_sample.txt
+2026-02-20 09:49:14,889 | Orchestrator | INFO | Stage 7: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Address, DOB)
+2026-02-20 09:49:14,893 | Orchestrator | INFO | Stage 8: SAVE: [DONE] Saved outputs:
+- data\processed\customers_cleaned.csv
+- data\processed\customers_masked.csv
