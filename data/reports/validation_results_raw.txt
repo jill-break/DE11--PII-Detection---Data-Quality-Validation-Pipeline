@@ -1,4 +1,4 @@
-VALIDATION RESULTS (GX 1.x)
+VALIDATION RESULTS
 ==================
 PASS: 8 expectations met
 FAIL: 6 expectations failed

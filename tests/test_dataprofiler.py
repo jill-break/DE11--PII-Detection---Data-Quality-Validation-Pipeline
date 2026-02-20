@@ -4,7 +4,7 @@ Tests for src/part1/dataprofiler.py — DataProfiler
 import pytest
 import pandas as pd
 from pathlib import Path
-from src.part1.dataprofiler import DataProfiler
+from src.part1.data_profiler import DataProfiler
 
 
 class TestDataProfilerLoadData:

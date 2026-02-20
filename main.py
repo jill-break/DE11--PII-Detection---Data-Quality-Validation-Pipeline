@@ -6,7 +6,7 @@ import sys
 
 # Importing custom modules
 from src.utils.logger_config import setup_pipeline_logger
-from src.part1.dataprofiler import DataProfiler
+from src.part1.data_profiler import DataProfiler
 from src.part2.pii_detector import PIIDetector
 from src.part3.data_validator import FintechGXValidator
 from src.part4.cleaning import DataRemediator

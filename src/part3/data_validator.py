@@ -59,10 +59,10 @@ class FintechGXValidator:
         return self
 
     def validate(self, report_path: str):
-        logger.info("Starting GX 1.x Validation execution...")
+        logger.info("Starting Validation execution...")
         
-        # Setup Data Source & Asset (Fluent API)
-        # Using a unique name to avoid collisions if re-run in a notebook
+        # Setup Data Source & Asset 
+        # Using a unique name to avoid conflicts in repeated runs
         ds_name = f"pandas_datasource_{pd.Timestamp.now().strftime('%M%S')}"
         datasource = self.context.data_sources.add_pandas(name=ds_name)
         asset = datasource.add_dataframe_asset(name="raw_customers")
@@ -88,13 +88,13 @@ class FintechGXValidator:
         return result
 
     def _generate_custom_report(self, result, report_path):
-        """Forensic mapping of GX results to the required deliverable format."""
+        """Forensic mapping of results to the required deliverable format."""
         stats = result.statistics
         # Calculate row-level failure estimation (GX doesn't give this directly, so we infer)
         failed_indices = set()
         
         report = [
-            "VALIDATION RESULTS (GX 1.x)",
+            "VALIDATION RESULTS",
             "==================",
             f"PASS: {stats['successful_expectations']} expectations met",
             f"FAIL: {stats['unsuccessful_expectations']} expectations failed",
@@ -136,4 +136,4 @@ class FintechGXValidator:
         with open(report_path, 'w') as f:
             f.write("\n".join(report))
             
-        logger.info(f"Forensic GX Report saved to {report_path}")
+        logger.info(f"Forensic Report saved to {report_path}")

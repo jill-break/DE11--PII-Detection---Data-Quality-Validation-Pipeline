@@ -419,3 +419,32 @@
 2026-02-20 09:49:14,893 | Orchestrator | INFO | Stage 8: SAVE: [DONE] Saved outputs:
 - data\processed\customers_cleaned.csv
 - data\processed\customers_masked.csv
+2026-02-20 11:01:46,571 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 11:01:46,571 | Orchestrator | INFO | Stage 1: LOAD: [DONE] Loaded customers_raw.csv
+- 10 rows, 10 columns
+2026-02-20 11:01:46,586 | GXValidator_V1 | INFO | Building Strict Expectations for suite: raw_suite
+2026-02-20 11:01:46,662 | GXValidator_V1 | INFO | Starting Validation execution...
+2026-02-20 11:01:47,030 | GXValidator_V1 | INFO | Forensic Report saved to data\reports\validation_results_raw.txt
+2026-02-20 11:01:47,031 | Orchestrator | INFO | Stage 2: VALIDATE (RAW): [DONE] Initial validation: 6 failures
+2026-02-20 11:01:47,047 | Profiler | INFO | Analysis complete. Report saved to: data\reports\data_profile_report.txt
+2026-02-20 11:01:47,066 | Orchestrator | INFO | Stage 3: CLEAN: [DONE] Normalized phone formats (10 rows)
+[DONE] Normalized email formats (1 rows)
+[DONE] Normalized date formats (2 rows)
+[DONE] Fixed capitalization (1 rows)
+[DONE] Filled missing values (9 rows)
+2026-02-20 11:01:47,077 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-20 11:01:47,154 | GXValidator_V1 | INFO | Starting Validation execution...
+2026-02-20 11:01:47,422 | GXValidator_V1 | INFO | Forensic Report saved to data\reports\validation_results.txt
+2026-02-20 11:01:47,422 | Orchestrator | INFO | Stage 4: VALIDATE (CLEANED): [FAIL] post-cleaning validation: 4 failures
+2026-02-20 11:01:47,422 | Remediator | INFO | Cleaning log saved to data\reports\cleaning_log.txt
+2026-02-20 11:01:47,424 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 11:01:47,426 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 11:01:47,428 | PIIDetector | INFO | PII Detection Report saved to data\reports\pii_detection_report.txt
+2026-02-20 11:01:47,428 | Orchestrator | INFO | Stage 6: DETECT PII: [DONE] Scanned for PII patterns
+- Emails found: 10
+- DOBs found: 10
+2026-02-20 11:01:47,434 | DataMasker | INFO | Masked sample report generated at data\reports\masked_sample.txt
+2026-02-20 11:01:47,434 | Orchestrator | INFO | Stage 7: MASK: [DONE] Masked all PII fields (Names, Emails, Phones, Address, DOB)
+2026-02-20 11:01:47,439 | Orchestrator | INFO | Stage 8: SAVE: [DONE] Saved outputs:
+- data\processed\customers_cleaned.csv
+- data\processed\customers_masked.csv
