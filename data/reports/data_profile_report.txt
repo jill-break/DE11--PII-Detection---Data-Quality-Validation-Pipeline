@@ -1,0 +1,35 @@
+DATA QUALITY PROFILE REPORT
+===========================
+
+COMPLETENESS:
+- customer_id: 100%
+- first_name: 90% (1 missing/invalid)
+- last_name: 90% (1 missing/invalid)
+- email: 100%
+- phone: 100%
+- date_of_birth: 90% (1 missing/invalid)
+- address: 80% (2 missing/invalid)
+- income: 90% (1 missing/invalid)
+- account_status: 90% (1 missing/invalid)
+- created_date: 90% (1 missing/invalid)
+
+DATA TYPES:
+- customer_id: INT
+- first_name: STRING
+- last_name: STRING
+- email: STRING
+- phone: STRING
+- address: STRING
+- account_status: STRING
+- date_of_birth: STRING  (should be DATE)
+- income: NUMERIC  (detected as Mixed/Object)
+
+QUALITY ISSUES:
+1. Non-standard Phone Formats, Examples: ['(555) 234-5678', '555.789.0123']
+2. Inconsistent Date Formats (Slashes detected): ['1975/05/10', '01/15/2024']
+3. Inconsistent Name Casing: last_name ('wilson')
+4. Non-standard Email Casing (Uppercase detected)
+
+SEVERITY:
+- Critical (blocks processing): 2
+- High (data incorrect): 3

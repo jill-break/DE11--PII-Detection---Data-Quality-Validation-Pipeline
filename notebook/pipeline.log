@@ -1,0 +1,224 @@
+2026-02-04 18:20:21,299 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-04 18:20:21,301 | FintechPipeline | ERROR | Data directory not found!
+2026-02-04 18:20:41,248 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-04 18:20:41,250 | FintechPipeline | INFO | Data directory verified.
+2026-02-04 18:20:53,917 | Profiler | ERROR | Input file not found: data\customers_raw.csv
+2026-02-04 18:20:53,918 | Profiler | ERROR | Analysis failed: File not found: data\customers_raw.csv
+2026-02-04 18:21:42,181 | Profiler | ERROR | Input file not found: ..\..\data\customers_raw.csv
+2026-02-04 18:21:42,183 | Profiler | ERROR | Analysis failed: File not found: ..\..\data\customers_raw.csv
+2026-02-04 18:22:01,228 | Profiler | ERROR | Input file not found: ..\..\..\data\customers_raw.csv
+2026-02-04 18:22:01,229 | Profiler | ERROR | Analysis failed: File not found: ..\..\..\data\customers_raw.csv
+2026-02-04 18:24:01,416 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-04 18:24:01,418 | FintechPipeline | INFO | Data directory verified.
+2026-02-04 18:24:22,550 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-04 18:24:22,574 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-04 18:24:22,584 | Profiler | INFO | Analysis complete. Report saved to: report/data_quality_report.txt
+2026-02-04 18:25:00,755 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-04 18:25:00,773 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-04 18:25:00,779 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-04 18:26:12,744 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-04 18:26:12,761 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-04 18:26:12,771 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-04 18:26:42,775 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-04 18:26:42,793 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-04 18:26:42,798 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-04 18:33:06,135 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-04 18:33:06,137 | FintechPipeline | INFO | Data directory verified.
+2026-02-04 18:35:13,552 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-04 18:35:13,554 | FintechPipeline | INFO | Data directory verified.
+2026-02-04 18:35:20,391 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-04 18:35:20,406 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-04 18:35:20,412 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-04 18:37:36,531 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-04 18:37:36,533 | FintechPipeline | INFO | Data directory verified.
+2026-02-04 18:37:36,575 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-04 18:37:36,594 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-04 18:37:36,600 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-04 18:38:17,911 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-04 18:38:17,915 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-04 18:39:19,241 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-04 18:39:19,244 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-04 18:41:11,908 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-04 18:41:11,910 | FintechPipeline | INFO | Data directory verified.
+2026-02-04 18:41:11,945 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-04 18:41:11,959 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-04 18:41:11,964 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-04 18:41:11,988 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-04 18:41:11,993 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-04 18:41:11,997 | PIIDetector | INFO | PII Detection Report saved to ../src/part2/report/pii_detection_report.txt
+2026-02-05 07:10:56,853 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-05 07:10:56,857 | FintechPipeline | INFO | Data directory verified.
+2026-02-05 07:10:56,942 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-05 07:10:56,961 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-05 07:10:56,969 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-05 07:10:56,994 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-05 07:10:56,999 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-05 07:10:57,009 | PIIDetector | INFO | PII Detection Report saved to ../src/part2/report/pii_detection_report.txt
+2026-02-05 07:13:40,628 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-05 07:13:40,633 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-05 07:13:40,640 | PIIDetector | INFO | PII Detection Report saved to ../src/part2/report/pii_detection_report.txt
+2026-02-05 07:19:01,603 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-05 07:19:01,609 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-05 07:19:01,615 | PIIDetector | INFO | PII Detection Report saved to ../src/part2/report/pii_detection_report.txt
+2026-02-05 07:19:21,091 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-05 07:19:21,101 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-05 07:19:21,112 | PIIDetector | INFO | PII Detection Report saved to ../src/part2/report/pii_detection_report.txt
+2026-02-05 07:21:19,085 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-05 07:21:19,087 | FintechPipeline | INFO | Data directory verified.
+2026-02-05 07:21:19,115 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-05 07:21:19,138 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-05 07:21:19,145 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-05 07:21:19,168 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-05 07:21:19,174 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-05 07:21:19,184 | PIIDetector | INFO | PII Detection Report saved to ../src/part2/report/pii_detection_report.txt
+2026-02-05 08:45:14,563 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-05 08:45:14,564 | FintechPipeline | INFO | Data directory verified.
+2026-02-05 08:45:14,616 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-05 08:45:14,633 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-05 08:45:14,641 | Profiler | ERROR | Analysis failed: 'charmap' codec can't encode character '\u2705' in position 434: character maps to <undefined>
+2026-02-05 08:45:50,127 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-05 08:45:50,140 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-05 08:45:50,145 | Profiler | ERROR | Analysis failed: 'charmap' codec can't encode character '\u2705' in position 434: character maps to <undefined>
+2026-02-05 08:46:19,677 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-05 08:46:19,678 | FintechPipeline | INFO | Data directory verified.
+2026-02-05 08:46:19,705 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-05 08:46:19,715 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-05 08:46:19,717 | Profiler | ERROR | Analysis failed: 'charmap' codec can't encode character '\u2705' in position 434: character maps to <undefined>
+2026-02-05 08:47:37,926 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-05 08:47:37,937 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-05 08:47:37,940 | Profiler | ERROR | Analysis failed: 'charmap' codec can't encode character '\u2705' in position 434: character maps to <undefined>
+2026-02-05 08:47:41,205 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-05 08:47:41,208 | FintechPipeline | INFO | Data directory verified.
+2026-02-05 08:47:41,231 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-05 08:47:41,241 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-05 08:47:41,244 | Profiler | ERROR | Analysis failed: 'charmap' codec can't encode character '\u2705' in position 434: character maps to <undefined>
+2026-02-05 08:48:02,786 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-05 08:48:02,788 | FintechPipeline | INFO | Data directory verified.
+2026-02-05 08:48:02,820 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-05 08:48:02,831 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-05 08:48:02,836 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-05 08:48:02,850 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-05 08:48:02,854 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-05 08:48:02,857 | PIIDetector | INFO | PII Detection Report saved to ../src/part2/report/pii_detection_report.txt
+2026-02-05 08:51:58,391 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-05 08:51:58,392 | FintechPipeline | INFO | Data directory verified.
+2026-02-05 08:51:58,410 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-05 08:51:58,418 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-05 08:51:58,422 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-05 08:51:58,444 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-05 08:51:58,447 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-05 08:51:58,449 | PIIDetector | INFO | PII Detection Report saved to ../src/part2/report/pii_detection_report.txt
+2026-02-05 08:53:39,699 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-05 08:53:39,701 | FintechPipeline | INFO | Data directory verified.
+2026-02-05 08:53:39,722 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-05 08:53:39,734 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-05 08:53:39,737 | Profiler | INFO | Analysis complete. Report saved to: ../src/part1/report/data_quality_report.txt
+2026-02-05 08:53:39,749 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-05 08:53:39,752 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-05 08:53:39,755 | PIIDetector | INFO | PII Detection Report saved to ../src/part2/report/pii_detection_report.txt
+2026-02-05 08:53:39,785 | GXValidator_V1 | INFO | Building Expectations for suite: fintech_suite
+2026-02-05 08:53:39,822 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-05 08:53:40,095 | GXValidator_V1 | INFO | GX Report saved to report/validation_results.txt
+2026-02-05 08:58:09,386 | GXValidator_V1 | INFO | Building Expectations for suite: fintech_suite
+2026-02-05 08:58:09,419 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-05 08:58:09,630 | GXValidator_V1 | INFO | GX Report saved to ../src/part3/report/validation_results.txt
+2026-02-05 10:24:12,789 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-05 10:24:12,791 | FintechPipeline | INFO | Data directory verified.
+2026-02-05 10:24:16,636 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-05 10:24:16,644 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-05 10:24:16,648 | Profiler | INFO | Analysis complete. Report saved to: ../data/reports/data_quality_report.txt
+2026-02-05 10:26:47,893 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-05 10:26:47,894 | FintechPipeline | INFO | Data directory verified.
+2026-02-05 10:26:47,959 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-05 10:26:47,971 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-05 10:26:47,976 | Profiler | INFO | Analysis complete. Report saved to: ../data/reports/data_quality_report.txt
+2026-02-05 10:26:48,050 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-05 10:26:48,053 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-05 10:26:48,058 | PIIDetector | INFO | PII Detection Report saved to ../data/reports/data_quality_report.txt
+2026-02-05 10:26:48,154 | GXValidator_V1 | INFO | Building Expectations for suite: fintech_suite
+2026-02-05 10:26:48,184 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-05 10:26:48,543 | GXValidator_V1 | INFO | GX Report saved to ../data/reports/data_quality_report.txt
+2026-02-05 10:30:34,100 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-05 10:30:34,100 | FintechPipeline | INFO | Data directory verified.
+2026-02-05 10:30:34,127 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-05 10:30:34,137 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-05 10:30:34,141 | Profiler | INFO | Analysis complete. Report saved to: ../data/reports/data_quality_report.txt
+2026-02-05 10:30:34,161 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-05 10:30:34,165 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-05 10:30:34,167 | PIIDetector | INFO | PII Detection Report saved to ../data/reports/pii_detection_report.txt
+2026-02-05 10:30:34,205 | GXValidator_V1 | INFO | Building Expectations for suite: fintech_suite
+2026-02-05 10:30:34,221 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-05 10:30:34,418 | GXValidator_V1 | INFO | GX Report saved to ../data/reports/validation_results.txt
+2026-02-15 15:01:35,831 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-15 15:01:35,833 | FintechPipeline | INFO | Data directory verified.
+2026-02-15 15:01:38,930 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-15 15:01:38,952 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-15 15:01:38,964 | Profiler | INFO | Analysis complete. Report saved to: ../data/reports/data_quality_report.txt
+2026-02-15 15:01:42,438 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-15 15:01:42,443 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-15 15:01:42,447 | PIIDetector | INFO | PII Detection Report saved to ../data/reports/pii_detection_report.txt
+2026-02-15 15:01:46,516 | GXValidator_V1 | INFO | Building Strict Expectations for suite: fintech_suite
+2026-02-15 15:01:46,612 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-15 15:01:47,105 | GXValidator_V1 | INFO | Forensic GX Report saved to ../data/reports/validation_results.txt
+2026-02-15 15:08:16,888 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-15 15:08:16,891 | FintechPipeline | INFO | Data directory verified.
+2026-02-15 15:08:24,041 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-15 15:08:24,132 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-15 15:08:24,553 | GXValidator_V1 | INFO | Forensic GX Report saved to report/validation_final.txt
+2026-02-15 15:08:24,557 | Remediator | INFO | Cleaning log saved to report/cleaning_log.txt
+2026-02-15 15:11:32,788 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-15 15:11:32,892 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-15 15:11:33,421 | GXValidator_V1 | INFO | Forensic GX Report saved to ../data/reports/validation_final.txt
+2026-02-15 15:11:33,425 | Remediator | INFO | Cleaning log saved to ../data/reports/cleaning_log.txt
+2026-02-15 15:11:33,433 | FintechPipeline | INFO | Pipeline Execution Complete. Golden Dataset generated.
+2026-02-15 15:16:50,662 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-15 15:16:50,664 | FintechPipeline | INFO | Data directory verified.
+2026-02-15 15:16:55,841 | DataMasker | INFO | Masked dataset saved to ../data/processed/customers_masked.csv
+2026-02-15 15:16:55,846 | DataMasker | INFO | Masked sample report generated at ../data/reports/masked_sample.txt
+2026-02-20 08:44:25,978 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-20 08:44:25,979 | FintechPipeline | INFO | Data directory verified.
+2026-02-20 08:44:30,714 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 08:44:30,726 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-20 08:44:30,732 | Profiler | INFO | Analysis complete. Report saved to: ../data/reports/data_quality_report.txt
+2026-02-20 08:44:35,185 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 08:44:35,189 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 08:44:35,191 | PIIDetector | INFO | PII Detection Report saved to ../data/reports/pii_detection_report.txt
+2026-02-20 08:44:41,194 | GXValidator_V1 | INFO | Building Strict Expectations for suite: fintech_suite
+2026-02-20 08:44:41,251 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 08:44:41,488 | GXValidator_V1 | INFO | Forensic GX Report saved to ../data/reports/validation_results.txt
+2026-02-20 08:57:25,536 | GXValidator_V1 | INFO | Building Strict Expectations for suite: fintech_suite
+2026-02-20 08:57:25,603 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 08:57:25,853 | GXValidator_V1 | INFO | Forensic GX Report saved to ../data/reports/validation_results.txt
+2026-02-20 08:57:38,228 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-20 08:57:38,283 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 08:57:38,566 | GXValidator_V1 | INFO | Forensic GX Report saved to ../data/reports/validation_final.txt
+2026-02-20 08:57:38,566 | Remediator | INFO | Cleaning log saved to ../data/reports/cleaning_log.txt
+2026-02-20 08:57:38,581 | FintechPipeline | INFO | Pipeline Execution Complete. Golden Dataset generated.
+2026-02-20 09:02:12,482 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-20 09:02:12,541 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:02:12,761 | GXValidator_V1 | INFO | Forensic GX Report saved to ../data/reports/validation_final.txt
+2026-02-20 09:02:12,765 | Remediator | INFO | Cleaning log saved to ../data/reports/cleaning_log.txt
+2026-02-20 09:02:12,770 | FintechPipeline | INFO | Pipeline Execution Complete. Golden Dataset generated.
+2026-02-20 09:04:29,489 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-20 09:04:29,670 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:04:30,593 | GXValidator_V1 | INFO | Forensic GX Report saved to ../data/reports/validation_final.txt
+2026-02-20 09:04:30,596 | Remediator | INFO | Cleaning log saved to ../data/reports/cleaning_log.txt
+2026-02-20 09:04:30,604 | FintechPipeline | INFO | Pipeline Execution Complete. Golden Dataset generated.
+2026-02-20 09:05:04,233 | FintechPipeline | INFO | Pipeline Logger initialized. Ready for Data Quality Analysis.
+2026-02-20 09:05:04,234 | FintechPipeline | INFO | Data directory verified.
+2026-02-20 09:05:04,291 | Profiler | INFO | Loaded 10 rows from customers_raw.csv
+2026-02-20 09:05:04,300 | Profiler | WARNING | Formatting issue: 2 rows have inconsistent phone formats.
+2026-02-20 09:05:04,304 | Profiler | INFO | Analysis complete. Report saved to: ../data/reports/data_quality_report.txt
+2026-02-20 09:05:04,352 | PIIDetector | INFO | Starting PII scanning process...
+2026-02-20 09:05:04,355 | PIIDetector | INFO | Scan complete. Found 10 emails and 10 phone numbers.
+2026-02-20 09:05:04,359 | PIIDetector | INFO | PII Detection Report saved to ../data/reports/pii_detection_report.txt
+2026-02-20 09:05:04,392 | GXValidator_V1 | INFO | Building Strict Expectations for suite: fintech_suite
+2026-02-20 09:05:04,460 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:05:04,827 | GXValidator_V1 | INFO | Forensic GX Report saved to ../data/reports/validation_results.txt
+2026-02-20 09:05:04,890 | GXValidator_V1 | INFO | Building Strict Expectations for suite: cleaned_suite
+2026-02-20 09:05:04,975 | GXValidator_V1 | INFO | Starting GX 1.x Validation execution...
+2026-02-20 09:05:05,391 | GXValidator_V1 | INFO | Forensic GX Report saved to ../data/reports/validation_final.txt
+2026-02-20 09:05:05,397 | Remediator | INFO | Cleaning log saved to ../data/reports/cleaning_log.txt
+2026-02-20 09:05:05,405 | FintechPipeline | INFO | Pipeline Execution Complete. Golden Dataset generated.
+2026-02-20 09:05:05,559 | DataMasker | INFO | Masked dataset saved to ../data/processed/customers_masked.csv
+2026-02-20 09:05:05,565 | DataMasker | INFO | Masked sample report generated at ../data/reports/masked_sample.txt
